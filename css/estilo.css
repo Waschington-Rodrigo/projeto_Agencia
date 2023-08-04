@@ -6,6 +6,7 @@ html{
 
 .corpoPagina{
    z-index: 1;
+   margin-bottom: 5em;
 }
 
 #fundo{/* imagem de fundo da pagina*/
@@ -47,3 +48,21 @@ a{
     border-radius: 20px 20px 0px 0px;
     height: auto;
  }
+
+ /* estilo da pagina home*/
+
+#sectionHome{
+    margin-top: 5%;
+}
+
+#cardHome{
+    background-image: url(../img/Viajou.comOpaca.png);
+    background-repeat:no-repeat;
+    box-shadow: 2px 2px 5px;
+}
+
+#cardHome p{
+    font-size: 15pt;
+    font-style: italic;
+}
+ 
