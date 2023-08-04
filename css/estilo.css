@@ -1,0 +1,49 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.corpoPagina{
+   z-index: 1;
+}
+
+#fundo{/* imagem de fundo da pagina*/
+    position: fixed;
+    opacity: 0.2;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.navbar{
+    background-color: rgb(148, 245, 214) !important;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#bodyContato{
+    margin-top:5%;
+    width: 100%;
+}
+
+#bodyContato th {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+ #footerAbsolute{
+    position: fixed;
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    background-color: rgb(190, 194, 194);
+    border-radius: 20px 20px 0px 0px;
+    height: auto;
+ }
