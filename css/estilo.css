@@ -94,4 +94,11 @@ a{
     box-shadow: 2px 2px 5px 5px rgb(44, 114, 201);
     border-radius: 15px !important;
 }
+
+/* estilo de pagina promoção*/
  
+#sectionPromo #cardPromo{
+    border-color: aqua !important;
+    box-shadow: 2px 2px 5px 5px rgb(44, 114, 201);
+
+}
