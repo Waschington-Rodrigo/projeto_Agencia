@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="corpoPagina">
+
+        <!--menu de navegação do site-->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+
+            <!--botão que abre o menu de navegação do site quando a largura da tela screen for small-->
+            <a class="navbar-brand" href="home.html"><img src="img/LogoViajou.com.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#como" aria-controls="como"
+                aria-expanded="false" aria-label="Altena navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Lista de opções do menu de navegação-->
+            <div class="collapse navbar-collapse" id="como">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Pagina Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destino.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <img id="fundo" src="img/Viajou.com.png" alt="imagem de fundo">
+        
+        <!--Formulario de Cadastro-->
+        <form id="formPage" class="container my-3">
+            <div  class="text-center my-3">
+                <h2 class="text-info">Cadastre-se</h2>
+            </div>
+            <div class="form-group">
+                <label for="iNome">Nome:</label>
+                <input required id="iNome" class="form-control form-control-sm" type="text" placeholder="Nome">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="iEnder">Endereço:</label>
+                    <input required id="iEnder" class="form-control form-control-sm" type="text" placeholder="Endereço">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade:</label>
+                    <input required type="text" class="form-control form-control-sm" id="inputCity" placeholder="Cidade">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email:</label>
+                <input required type="email" class="form-control form-control-sm" id="exampleFormControlInput1"
+                    placeholder="name@example.com">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="iLocalPart">Local de partida:</label>
+                    <input required type="text" class="form-control form-control-sm" id="iLocalPart"
+                        placeholder="Cidade de partida">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="iDest">Destino:</label>
+                    <select required class="form-control form-control-sm" name="" id="iDest">
+                        <option class="text-muted" disabled selected value="">Destino</option>
+                        <option value="Fortaleza-CE">Fortaleza-CE</option>
+                        <option value="NovaRoma-GO">Nova Roma-GO</option>
+                        <option value="AltoParaíso-GO">Alto Paraiso-GO</option>
+                        <option value="Brasilia-DF">Brasília-DF</option>
+                        <option value="RioJaneiro-RJ">Rio de Janeiro-RJ</option>
+                        <option value="Manaus-AM">Manaus-AM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <div class="form-group">
+                    <label for="">Escolha seu pacote promocional:</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        pacote economica
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        pacote médio
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        pacote Luxo
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn btn-primary">Enviar cadastro</button>
+
+        </form>
+
+
+        <footer id="footerAbsolute">
+            <div class="row justify-content-center">
+                <label class="font-weight-bold" for="">produzido por:</label>
+            </div>
+            <div class="row justify-content-center">
+                <p class="font-weight-light text-monospace ">Waschington Rodrigo</p>
+            </div>
+    </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
