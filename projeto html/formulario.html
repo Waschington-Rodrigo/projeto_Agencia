@@ -44,79 +44,57 @@
         </nav>
 
         <img id="fundo" src="img/Viajou.com.png" alt="imagem de fundo">
-        
+
         <!--Formulario de Cadastro-->
         <form id="formPage" class="container my-3">
-            <div  class="text-center my-3">
+            <div class="text-center my-3">
                 <h2 class="text-">Cadastre-se</h2>
             </div>
             <div class="form-group">
                 <label for="iNome">Nome:</label>
-                <input required id="iNome" class="form-control form-control-sm" type="text" placeholder="Nome">
+                <input required id="iNome" name="nNome" class="form-control form-control-sm" type="text"
+                    placeholder="Nome">
             </div>
             <div class="form-row">
                 <div class="form-group col-sm-6">
                     <label for="iEnder">Endereço:</label>
-                    <input required id="iEnder" class="form-control form-control-sm" type="text" placeholder="Endereço">
+                    <input required id="iEnder" name="nEnder" class="form-control form-control-sm" type="text"
+                        placeholder="Endereço">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputCity">Cidade:</label>
-                    <input required type="text" class="form-control form-control-sm" id="inputCity" placeholder="Cidade">
+                    <label for="iCidade">Cidade:</label>
+                    <input required type="text" class="form-control form-control-sm" id="iCidade" name="nCidade"
+                        placeholder="Cidade">
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email:</label>
-                <input required type="email" class="form-control form-control-sm" id="exampleFormControlInput1"
+                <label for="iEmail">Email:</label>
+                <input required type="email" class="form-control form-control-sm" id="iEmail" name="nEmail"
                     placeholder="name@example.com">
             </div>
 
-            <div class="form-row">
-                <div class="form-group col-sm-6">
-                    <label for="iLocalPart">Local de partida:</label>
-                    <input required type="text" class="form-control form-control-sm" id="iLocalPart"
-                        placeholder="Cidade de partida">
-                </div>
-                <div class="form-group col-sm-6">
-                    <label for="iDest">Destino:</label>
-                    <select required class="form-control form-control-sm" name="" id="iDest">
-                        <option class="text-muted" disabled selected value="">Destino</option>
-                        <option value="Fortaleza-CE">Fortaleza-CE</option>
-                        <option value="NovaRoma-GO">Nova Roma-GO</option>
-                        <option value="AltoParaíso-GO">Alto Paraiso-GO</option>
-                        <option value="Brasilia-DF">Brasília-DF</option>
-                        <option value="RioJaneiro-RJ">Rio de Janeiro-RJ</option>
-                        <option value="Manaus-AM">Manaus-AM</option>
-                    </select>
-                </div>
-            </div>
 
             <div class="form-group">
-
-                <div class="form-group">
-                    <label for="">Escolha seu pacote promocional:</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                        value="1" checked>
-                    <label class="form-check-label font-weight-bold" for="exampleRadios1">
-                        Pacote Economica
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="2">
-                    <label class="form-check-label font-weight-bold" for="exampleRadios2">
-                        Pacote Tranquilidade
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                        value="3">
-                    <label class="form-check-label font-weight-bold" for="exampleRadios3">
-                        Pacote Luxo
-                    </label>
-                </div>
+                <label for="iCpf">CPF:</label>
+                <input required type="text" class="form-control form-control-sm" id="iCpf" name="nCpf" placeholder="">
             </div>
+            <div class="form-group">
+                <label for="iDataNasc">Data Nascimento:</label>
+                <input required type="date" class="form-control form-control-sm" id="iDataNasc" name="nDataNasc">
+            </div>
+            <div class="form-group">
+                <label for="iTell">Telefone:</label>
+                <input required type="text" class="form-control form-control-sm" id="iTell" name="nTell"
+                    placeholder="(61) 99999-9999">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="iEstado">Estado:</label>
+                <input required type="text" class="form-control form-control-sm" id="iEstado" name="nEstado"
+                    placeholder="Ex: GO, DF, MG...">
+            </div>
+
+
 
             <button class="btn btn-primary my-3">Enviar cadastro</button>
 
@@ -146,7 +124,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     </div>
-  
+
 </body>
 
 </html>
